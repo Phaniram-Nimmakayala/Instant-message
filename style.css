@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #075e54, #25d366);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Form Card */
+form {
+    width: 350px;
+    background: #e5ddd5;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+/* WhatsApp Icon */
+form div {
+    width: 60px;
+    height: 60px;
+    background: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+form div i {
+    color: white;
+    font-size: 32px;
+}
+
+/* Input Fields */
+input,
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    background: white;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+input::placeholder{
+    color: black;
+}
+textarea::placeholder{
+    color: black;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    background: #25d366;
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background: #1ebe5d;
+    transform: scale(1.03);
+}
+
+button i {
+    font-size: 22px;
+}
+
+/* WhatsApp Chat Feel (Green Fragmentation) */
+form::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("https://i.imgur.com/2JgZ8Qw.png");
+    opacity: 0.05;
+    border-radius: 15px;
+    pointer-events: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+    }
+}
+footer {
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+
+footer p {
+    display: inline-block;
+    font-size: 13px;
+    color: #075e54;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 6px 14px;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+footer span {
+    color: #25d366;
+    font-weight: 600;
+}
